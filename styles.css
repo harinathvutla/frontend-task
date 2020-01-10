@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0 6rem;
+  background-color: grey;
+}
+
+.filters {
+  display: flex;
+  padding-top: 2rem;
+}
+.filter {
+  height: 2rem;
+  color: white;
+  margin: auto 1rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+}
+
+.filter input {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  padding-top: 0.1rem;
+}
+
+label {
+  font-size: 0.8rem;
+  display: inline-block;
+  line-height: 0.8rem;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.orange {
+  background-color: orange;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 18rem;
+  margin: 1rem;
+}
+
+.card img {
+  height: 12rem;
+}
+
+.remove {
+  display: none;
+}
+
+.card-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-heading p {
+  font-size: 0.8rem;
+  color: white;
+  border-radius: 20px;
+  padding: 0.2rem 0.5rem;
+}
+
+.ml-auto {
+  left: auto !important;
+  right: 0px;
+}
+
+@media (max-width: 500px) {
+  .filters {
+    display: inline-block;
+  }
+  .filter {
+    margin-top: 1rem;
+  }
+
+  body {
+    margin: 0 2rem;
+  }
+}
+
+@media (max-height: 500px) {
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  body {
+    margin: 0 2rem;
+  }
+}
+
+.gt-orange {
+  color: orange;
+  font-size: 1.5rem;
+}
+
+.gt-green {
+  color: green;
+  font-size: 1.5rem;
+}
+.gt-red {
+  color: red;
+  font-size: 1.5rem;
+}
+
+.moreinfo {
+  color: black;
+  font-size: 1rem;
+}
+
+.moreinfo-orange:hover {
+  text-decoration-color: orange;
+  color: black;
+}
+
+.moreinfo-red:hover {
+  text-decoration-color: red;
+  color: black;
+}
+
+.moreinfo-green:hover {
+  text-decoration-color: green;
+  color: black;
+}
