@@ -26,6 +26,7 @@ checkboxFruit.addEventListener("change", e => {
 });
 
 displayCard = category => {
+  //console.log(document.getElementsByClassName("card"));
   [...document.getElementsByClassName("card")]
     .filter(x => x.className.indexOf(category) !== -1)
     .forEach(element => {
